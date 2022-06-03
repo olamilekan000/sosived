@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  auth:
+    build:
+      context: .
+      dockerfile: Dockerfile.Auth
+    ports:
+      - 8989:8989
+    environment:
+      - JWT_SECRET=notsecured
+
+  receiver-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.Server
+    ports:
+      - 50059:50059    
+    
+  frontend:
+    depends_on:
+      - sender
+      - auth
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+
+  sender:
+    build:
+      context: .
+      dockerfile: Dockerfile.Sender
+    ports:
+      - 8188:8188  

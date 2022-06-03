@@ -1,0 +1,17 @@
+{
+	"folders": [
+    {
+      "path": "auth-service"
+    },
+    {
+      "path": "receiver"
+    },
+    {
+      "path": "sender"
+    }
+  ],
+	"remoteAuthority": "wsl+Ubuntu",
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

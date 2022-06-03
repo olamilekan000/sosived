@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package receiver;
+
+option go_package = "github.com/olamilekan000/sosivio-app/receiver";
+
+message MessageItem {
+    string Message = 1;
+}
+
+service Messaging {
+    rpc ProcessMessage (stream MessageItem) returns (MessageItem);
+}
