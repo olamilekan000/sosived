@@ -83,4 +83,4 @@ You an also see the data being streamed by the client and also being processed b
 
 ![alt text](message.processing.png)
 
-- To trigger the message streaming, open you browser and headover to the [frontend app](http://localhost:3000/). Then log-in with the user name and password provided above.
+- To trigger the message streaming, open up your browser and headover to the [frontend app](http://localhost:3000/). Then log-in with the user name and password provided above.
