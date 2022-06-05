@@ -53,7 +53,7 @@ http://localhost:8989/auth/login
 }
 ```
 
-Send Message - This basically just triggers the gRPC client stream messages to the RPC server and in return to the streams, a single response is gotten. (Client Streaming)
+Send Message - This basically just triggers the gRPC client and then stream messages to the RPC server and in return to the streams, a single response is gotten. (Client Streaming)
 
 - API Endpoint
 
